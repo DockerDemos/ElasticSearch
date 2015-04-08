@@ -1,7 +1,7 @@
 Elasticsearch Docker Image
 ==========================
 
-[Docker](http://docker.io) image for running an [Elasticsearch](http://www.elasticsearch.org) instance.
+[Docker](http://docker.io) image for running an [Elasticsearch](https://www.elastic.co/products/elasticsearch) instance.
 
 __Building and Running__
 
@@ -26,11 +26,11 @@ Enjoy!
 
 ##Copyright Information##
 
-Elasticsearch is Copyright 2012-2014 Elasticsearch BV
+Elasticsearch is Copyright 2015 Elasticsearch
 
 The DockerDemos/ElasticSearch code here is:
  
-Copyright (C) 2014 Chris Collins
+Copyright (C) 2014-2015 Chris Collins
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
