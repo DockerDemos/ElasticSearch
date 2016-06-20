@@ -3,13 +3,18 @@
 FROM centos:centos7
 MAINTAINER Chris Collins <collins.christopher@gmail.com>
 
-ENV PKG="https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.7.2.tar.gz"
+ENV KEY 'https://packages.elastic.co/GPG-KEY-elasticsearch'
 
-RUN yum install -y tar java && yum clean all
+ADD elasticsearch.repo /etc/yum/repos.d/elasticsearch.repo
 
-RUN mkdir /elasticsearch
-RUN curl -sSL $PKG | tar -xz  -C /elasticsearch --strip-components=1
+RUN rpm --import $KEY \
+    && yum install -y elasticsearch java which \
+    && yum clean all
+
+RUN mkdir -p /etc/service/elasticsearch
+ADD elasticsearch.run /etc/service/elasticsearch/run
+RUN chmod -R a+x /etc/service/elasticsearch
 
 EXPOSE 9200
 
-ENTRYPOINT [ "/elasticsearch/bin/elasticsearch" ]
+ENTRYPOINT [ "/etc/service/elasticsearch/run" ]
