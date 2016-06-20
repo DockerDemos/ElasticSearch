@@ -1,12 +1,16 @@
 #!/bin/bash
 
-set -e
 set -x
 
+cleanup () {
+    # Cleanup after ourselves
+    docker stop elastic
+    docker rm elastic
+}
 
 test_start () {
     # Test the container starts, and responds to external output
-    curl -XGET 'http://localhost:9200/twitter/tweet/1' | grep "trying out Elasticsearch"
+    curl -XGET 'http://localhost:9200/' | grep "You Know, for Search"
 }
 
 test_put () {
@@ -31,14 +35,32 @@ create_container () {
                                  --name elastic \
                                  -d elastic)
 
-    echo $contaienr
+    echo $container
 
 }
 
-main () {
-    local testdir=$(pwd/tmp)
+wait_for_startup () {
+    local container="$1"
+    local string="$2"
+    # Needs a few seconds for startup time
+    until docker logs $container | grep "$string" || (( count++ >= 5 ))
+      do echo "Waiting for startup to complete..."
+      sleep 3
+    done
+}
 
-    local container=$(create_container)
+main () {
+    local testdir="$(pwd)/tmp"
+
+    # A little pre-cleanup
+    cleanup
+
+    mkdir -p $testdir
+
+    local container=$(create_container $testdir)
+
+    wait_for_startup $container "started"
+
     test_start || return 1
     test_put   || return 1
     test_get   || return 1
@@ -47,10 +69,19 @@ main () {
     docker stop $container
     docker rm $container
 
-    local container=$(create_container)
+    local container=$(create_container $testdir)
+
+    wait_for_startup $container "Cluster health status changed from [RED] to [YELLOW]"
+
     # This should still be here
     test_get   || return 1
 
 }
 
 main "$@"
+
+retval="$?"
+
+trap cleanup EXIT
+
+exit $retval
