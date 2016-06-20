@@ -8,7 +8,13 @@ __Building and Running__
 1. `git clone https://github.com/DockerDemos/ElasticSearch`
 2. `cd ElasticSearch`
 3. `docker build -t elastic .  <-- note the period on the end`
-4. `docker run -p 9200:9200 -d elastic`
+4. `docker run -p 9200:9200 \
+               -v <host_data_storage_path>:/var/lib/elasticsearch \
+	       -e ELASTIC_CONFIG_NETWORK_HOST=<address to bind to> \
+	       --name elastic \
+	       -d elastic`
+
+The "host\_data\_storage\_path" is the directory on the host in which you will store the persistent data, and the "ELASTIC\_CONFIG\_NETWORK\_HOST" variable is the address you want ElasticSearch to listen for connections on \(usually 0.0.0.0, or 127.0.0.1, depending on if it will be a stand-alone, or linked container instance\). The ELASTIC\_CONFIG\_NETWORK\_HOST will default to 127.0.0.1 if nothing is specified.
 
 You now have an Elasticsearch instance running, listening on port 9200.
 
@@ -21,25 +27,4 @@ Put some info in:
 Get it back out:
 
     curl -XGET 'http://localhost:9200/twitter/user/kimchy?pretty=true'
-
-Enjoy!
-
-##Copyright Information##
-
-Elasticsearch is Copyright 2015 Elasticsearch
-
-The DockerDemos/ElasticSearch code here is:
- 
-Copyright (C) 2014-2015 Chris Collins
-
-This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/.
-
-
-
-
-
 

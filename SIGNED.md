@@ -1,11 +1,11 @@
 ##### Signed by https://keybase.io/clcollins
 ```
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1
+Version: GnuPG v2
 
-iEYEABECAAYFAlX8akIACgkQte6EFif3vzdpTQCgnTRTtLlcKfkWQD5ZcocPIqLm
-ERkAoJzd3QFhjjrDtJDARQMCXEG05NG+
-=5+xJ
+iEYEABECAAYFAldoOccACgkQte6EFif3vzdB/QCg+5k8AHniwdqPbRV4hiBU5a26
+zmoAoIVdLVKQvCAoP7tr2z5HOyMfKmiI
+=cb6j
 -----END PGP SIGNATURE-----
 
 ```
@@ -17,11 +17,16 @@ ERkAoJzd3QFhjjrDtJDARQMCXEG05NG+
 #### Expect
 
 ```
-size   exec  file          contents                                                        
-             ./                                                                            
-431            Dockerfile  6a1abe3e8f92e64817d5c188f11ed47ab9b9a0334391f61a13fd70615d20839c
-35120          LICENSE     fe3eea6c599e23a00c08c5f5cb2320c30adc8f8687db5fcec9b79a662c53ff6b
-1456           README.md   01ef35a1774f389683ec11606eb0bf5ecaebc4cd5299a5c315c12217813687a3
+size   exec  file                  contents                                                        
+             ./                                                                                    
+143            CHANGELOG           2a3beb5b94949af2353ef12c89c99b39a354d7aa6d5dc264a06010888e8f5a44
+548            Dockerfile          ef26f538ceadb9fdd0632caf92a099cdb39d9d3d59a10dc4940e556a92049544
+465            duke-ize.sh         9f6c6e559eec5441f4ef1c5329c1b08984bd76bc918860ee6504ae9f16d8a158
+524            Dukerfile           edcfe75b43a7cd52d20860e6718814a2def2a751dd97e7490f2245e3543cc675
+206            elasticsearch.repo  b635183689c7a3cdb83bc47694571823541132078ef6230312645a6cc4f593e9
+1484           elasticsearch.run   0cc616151cbb14d69a7fcbc2feddf3092274a72043b96a02747a4a73b87c46f2
+35120          LICENSE             fe3eea6c599e23a00c08c5f5cb2320c30adc8f8687db5fcec9b79a662c53ff6b
+1257           README.md           d399c98d28a752aab364d802cc6e8b26bb47aa2197f4ff3186bcd1ad47e00702
 ```
 
 #### Ignore
