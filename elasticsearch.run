@@ -44,6 +44,14 @@ fi
 chown -R ${User}.${Group} $LOG_DIR
 chown -R ${User}.${Group} $DATA_DIR
 
+if [[ -z $ELASTIC_CONFIG_NETWORK_HOST ]]
+  then echo "ELASTIC_CONFIG_NETWORK_HOST not set.  Defaulting to 127.0.0.1."
+  ELASTIC_CONFIG_NETWORK_HOST='127.0.0.1'
+else
+  echo "ELASTIC_CONFIG_NETWORK_HOST set to ${ELASTIC_CONFIG_NETWORK_HOST}"
+fi
+
+
 exec /usr/share/elasticsearch/bin/elasticsearch \
      -Des.pidfile=${PID_DIR}/elasticsearch.pid \
      -Des.default.path.home=${ES_HOME} \

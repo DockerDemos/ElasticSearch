@@ -3,9 +3,9 @@
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v2
 
-iEYEABECAAYFAldoOmcACgkQte6EFif3vzeZMwCg1smiMinnurpTm9Nc+/EBLuTL
-P/AAn2Q9NkxSpJwrPpYx2EVz58j99dyk
-=Y9Ld
+iEYEABECAAYFAldoR00ACgkQte6EFif3vzf44ACfQ4Sg03NQMA5r+rESFnhC8yvF
+ciEAoKSCr3xLcZmanhnI+r2Qjz0uIJDp
+=JG42
 -----END PGP SIGNATURE-----
 
 ```
@@ -24,9 +24,11 @@ size   exec  file                  contents
 465            duke-ize.sh         9f6c6e559eec5441f4ef1c5329c1b08984bd76bc918860ee6504ae9f16d8a158
 524            Dukerfile           edcfe75b43a7cd52d20860e6718814a2def2a751dd97e7490f2245e3543cc675
 206            elasticsearch.repo  b635183689c7a3cdb83bc47694571823541132078ef6230312645a6cc4f593e9
-1484           elasticsearch.run   0cc616151cbb14d69a7fcbc2feddf3092274a72043b96a02747a4a73b87c46f2
+1729           elasticsearch.run   eae210364f7c78fba613f3a9a4b584f0af07da8f930c540d451fe79c776f7c7c
 35120          LICENSE             fe3eea6c599e23a00c08c5f5cb2320c30adc8f8687db5fcec9b79a662c53ff6b
 1270           README.md           c0f082b0405f95bd8115a6046971122a8f1def1d978bc7618268397e3d25d7b5
+               tests/                                                                              
+1343             elastic.sh        a8dd5871b25fdcea50aa38f078ee789341db6c18a58045ad84b27b4ca25679fa
 ```
 
 #### Ignore
