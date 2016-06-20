@@ -8,7 +8,7 @@ ENV KEY 'https://packages.elastic.co/GPG-KEY-elasticsearch'
 ADD elasticsearch.repo /etc/yum/repos.d/elasticsearch.repo
 
 RUN rpm --import $KEY \
-    && yum install -y elasticsearch java which \
+    && yum install -y elasticsearch java-headless \
     && yum clean all
 
 RUN mkdir -p /etc/service/elasticsearch
