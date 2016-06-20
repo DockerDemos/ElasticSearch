@@ -3,9 +3,9 @@
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v2
 
-iEYEABECAAYFAldoUkwACgkQte6EFif3vzebSwCfbnIv14bdcR4FlB1HepAJfmTN
-qy8AoN41RvsEWoOOHWZ4aUQDSzHtr1fP
-=wTso
+iEYEABECAAYFAldoUmgACgkQte6EFif3vzeZQgCg53fYuYXk4iJA0EEMYBFRFXIm
+WC0Ani+mFj28eCgXL9Vm1d9PPni1Vjnd
+=pFGv
 -----END PGP SIGNATURE-----
 
 ```
@@ -20,7 +20,7 @@ qy8AoN41RvsEWoOOHWZ4aUQDSzHtr1fP
 size   exec  file                                contents                                                                                                                         
              ./                                                                                                                                                                   
 12288          .duke-ize.sh.swp                  40bd375f0cf1f3370df135d9639ee39675dd13168df3805f10b9e3e5bec8b81d|87eb146adce1897bb899e95b460040e00f49e02786352391db3006536ad80d75
-143            CHANGELOG                         2a3beb5b94949af2353ef12c89c99b39a354d7aa6d5dc264a06010888e8f5a44                                                                 
+157            CHANGELOG                         3fa1502d2f18a56ae8a38262f28df559f03650f5fc69dd1a7b869560777e92ed                                                                 
 548            Dockerfile                        ef26f538ceadb9fdd0632caf92a099cdb39d9d3d59a10dc4940e556a92049544                                                                 
 465            duke-ize.sh                       9f6c6e559eec5441f4ef1c5329c1b08984bd76bc918860ee6504ae9f16d8a158                                                                 
 524            Dukerfile                         edcfe75b43a7cd52d20860e6718814a2def2a751dd97e7490f2245e3543cc675                                                                 
