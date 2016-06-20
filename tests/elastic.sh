@@ -50,6 +50,7 @@ wait_for_startup () {
 }
 
 main () {
+    local image="$1"
     local testdir="$(pwd)/tmp"
 
     # A little pre-cleanup

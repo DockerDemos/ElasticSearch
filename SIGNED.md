@@ -3,9 +3,9 @@
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v2
 
-iEYEABECAAYFAldoUmgACgkQte6EFif3vzeZQgCg53fYuYXk4iJA0EEMYBFRFXIm
-WC0Ani+mFj28eCgXL9Vm1d9PPni1Vjnd
-=pFGv
+iEYEABECAAYFAldoU4IACgkQte6EFif3vze5gACfe+O4zUyOgqs556YdqcmKjDSV
+1J8AniFGXGiyTtpv3HdAZUw1naOxnjgh
+=fqIK
 -----END PGP SIGNATURE-----
 
 ```
@@ -19,7 +19,7 @@ WC0Ani+mFj28eCgXL9Vm1d9PPni1Vjnd
 ```
 size   exec  file                                contents                                                                                                                         
              ./                                                                                                                                                                   
-12288          .duke-ize.sh.swp                  40bd375f0cf1f3370df135d9639ee39675dd13168df3805f10b9e3e5bec8b81d|87eb146adce1897bb899e95b460040e00f49e02786352391db3006536ad80d75
+12288          .Dockerfile.swp                   054a5d447b46a149566d434b585b6357e4871c84c3f3df72d4e3d09f567034d2|349177edefd2e11006b9df40381d26606250925f4107fb99216269d69ed57679
 157            CHANGELOG                         3fa1502d2f18a56ae8a38262f28df559f03650f5fc69dd1a7b869560777e92ed                                                                 
 548            Dockerfile                        ef26f538ceadb9fdd0632caf92a099cdb39d9d3d59a10dc4940e556a92049544                                                                 
 465            duke-ize.sh                       9f6c6e559eec5441f4ef1c5329c1b08984bd76bc918860ee6504ae9f16d8a158                                                                 
@@ -29,7 +29,7 @@ size   exec  file                                contents
 35120          LICENSE                           fe3eea6c599e23a00c08c5f5cb2320c30adc8f8687db5fcec9b79a662c53ff6b                                                                 
 1270           README.md                         c0f082b0405f95bd8115a6046971122a8f1def1d978bc7618268397e3d25d7b5                                                                 
                tests/                                                                                                                                                             
-1931             elastic.sh                      a6f7a32fd9417f91e592b2cdef99e84d166551ffce5f967732211b38e7f55788                                                                 
+1952             elastic.sh                      35290c970582dd0bebc3288d7628841c52e0e22068dc08c7f276bdb06318b286                                                                 
                tmp/                                                                                                                                                               
                  elasticsearch/                                                                                                                                                   
                    nodes/                                                                                                                                                         
